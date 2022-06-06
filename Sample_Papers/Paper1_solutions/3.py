@@ -6,7 +6,6 @@ Sample Output
 '''
 a=input()
 l=list(a)
-e=list(set(l))
 d={}
 [d.update({l[i]:l.count(l[i])}) for i in range(len(l))]    
 print(d)
