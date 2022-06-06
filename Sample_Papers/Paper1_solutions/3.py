@@ -10,6 +10,5 @@ e=list(set(l))
 c=[i for i in l if i in e]
 print(c)
 d={}
-for i in range(len(c)):
-    d.update({c[i]:l.count(c[i])})
+[d.update({c[i]:l.count(c[i])}) for i in range(len(c))]    
 print(d)
